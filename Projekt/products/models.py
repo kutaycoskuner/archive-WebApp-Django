@@ -9,3 +9,11 @@ class Product(models.Model):
 
 
 
+class Offer(models.Model):
+    code = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+    discount = models.FloatField()
+
+
+
+
